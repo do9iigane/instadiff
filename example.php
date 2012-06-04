@@ -22,10 +22,10 @@ require_once 'Instagram.php';
  * instagram provide you at http://instagr.am/developer/
  */
 $config = array(
-        'client_id' => 'e8d6b06f7550461e897b45b02d84c23e',
-        'client_secret' => '2357fc69da344800acef2592ef647491',
+        'client_id' => 'f080fc1fb4b447a49795275a7fcb9036',
+        'client_secret' => '6e7b34c2d54f4dc984254825267731d8',
         'grant_type' => 'authorization_code',
-        'redirect_uri' => 'http://mauriciocuenca.com/qnktwit/confirm.php',
+        'redirect_uri' => 'http://instadiff.herokuapp.com/',
      );
 
 /**
