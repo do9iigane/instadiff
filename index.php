@@ -8,14 +8,15 @@ include './protected/config/routes.conf.php';
 include $config['BASE_PATH'].'Doo.php';
 include $config['BASE_PATH'].'app/DooConfig.php';
 
-phpinfo();
-exit;
 # Uncomment for auto loading the framework classes.
 //spl_autoload_register('Doo::autoload');
 
 Doo::conf()->set($config);
 # remove this if you wish to see the normal PHP error view.
 include $config['BASE_PATH'].'diagnostic/debug.php';
+
+var_dump($cofig);
+exit;
 
 # database usage
 //Doo::useDbReplicate();	#for db replication master-slave usage
