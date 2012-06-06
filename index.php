@@ -3,6 +3,9 @@ include './protected/config/common.conf.php';
 include './protected/config/routes.conf.php';
 //include './protected/config/db.conf.php';
 
+var_dump($config);
+exit;
+
 #Just include this for production mode
 //include $config['BASE_PATH'].'deployment/deploy.php';
 include $config['BASE_PATH'].'Doo.php';
