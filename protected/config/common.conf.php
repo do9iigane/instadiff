@@ -14,14 +14,17 @@ date_default_timezone_set('Asia/Tokyo');
 
 
 //for production mode use 'prod'
-$config['APP_MODE'] = 'prod';
 
-if($config['APP_MODE']=='dev'){ 
+
+
+if($_SERVER['SERVER_NAME']=='localhost'){
+    $config['APP_MODE'] = 'dev'; 
   //For framework use. Must be defined. Use full absolute paths and end them with '/'      eg. /var/www/project/
   $config['SITE_PATH'] = realpath('..').'/instadiff/';
   //$config['PROTECTED_FOLDER'] = 'protected/';
   $config['BASE_PATH'] = realpath('..').'/instadiff/dooframework/';
 }else{
+    $config['APP_MODE'] = 'prod';
   $config['SITE_PATH'] = realpath('..').'/';
   //$config['PROTECTED_FOLDER'] = 'protected/';
   $config['BASE_PATH'] = realpath('..').'/dooframework/';

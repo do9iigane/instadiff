@@ -23,7 +23,7 @@ include $config['BASE_PATH'].'diagnostic/debug.php';
 //Doo::db()->sql_tracking = true;	#for debugging/profiling purpose
 
 echo 'check1';
-
+exit;
 Doo::app()->route = $route;
 
 echo 'check2';
