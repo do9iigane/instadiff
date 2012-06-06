@@ -15,21 +15,13 @@ Doo::conf()->set($config);
 # remove this if you wish to see the normal PHP error view.
 include $config['BASE_PATH'].'diagnostic/debug.php';
 
-var_dump($cofig);
-exit;
-
 # database usage
 //Doo::useDbReplicate();	#for db replication master-slave usage
 //Doo::db()->setMap($dbmap);
 //Doo::db()->setDb($dbconfig, $config['APP_MODE']);
 //Doo::db()->sql_tracking = true;	#for debugging/profiling purpose
 
-echo 'check1';
-exit;
 Doo::app()->route = $route;
-
-echo 'check2';
-exit;
 
 # Uncomment for DB profiling
 //Doo::logger()->beginDbProfile('doowebsite');
