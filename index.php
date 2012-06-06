@@ -8,9 +8,6 @@ include './protected/config/routes.conf.php';
 include $config['BASE_PATH'].'Doo.php';
 include $config['BASE_PATH'].'app/DooConfig.php';
 
-var_dump($config);
-exit;
-
 # Uncomment for auto loading the framework classes.
 //spl_autoload_register('Doo::autoload');
 
@@ -25,7 +22,12 @@ include $config['BASE_PATH'].'diagnostic/debug.php';
 //Doo::db()->setDb($dbconfig, $config['APP_MODE']);
 //Doo::db()->sql_tracking = true;	#for debugging/profiling purpose
 
+echo 'check1';
+
 Doo::app()->route = $route;
+
+echo 'check2';
+exit;
 
 # Uncomment for DB profiling
 //Doo::logger()->beginDbProfile('doowebsite');
