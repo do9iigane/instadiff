@@ -12,7 +12,8 @@ include $config['BASE_PATH'].'app/DooConfig.php';
 //spl_autoload_register('Doo::autoload');
 
 Doo::conf()->set($config);
-
+echo 'check0';
+exit;
 # remove this if you wish to see the normal PHP error view.
 include $config['BASE_PATH'].'diagnostic/debug.php';
 
