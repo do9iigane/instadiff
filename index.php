@@ -11,6 +11,9 @@ include $config['BASE_PATH'].'app/DooConfig.php';
 # Uncomment for auto loading the framework classes.
 //spl_autoload_register('Doo::autoload');
 
+echo 'check00';
+exit;
+
 Doo::conf()->set($config);
 echo 'check0';
 exit;
