@@ -38,7 +38,10 @@ class Doo{
      * @return DooConfig configuration settings defined in <i>common.conf.php</i>, auto create if the singleton has not been created yet.
      */
     public static function conf(){
+        echo 'cehck01';
         if(self::$_conf===NULL){
+            echo 'check02';
+            exit;
             self::$_conf = new DooConfig;
         }
         return self::$_conf;
