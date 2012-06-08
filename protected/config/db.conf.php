@@ -32,7 +32,9 @@ $dbmap['Ingredient']['has_many']['Food'] = array('foreign_key'=>'ingredient_id',
  * array('localhost', 'database', 'root', '1234', 'mysql', true, 'collate'=>'utf8_unicode_ci', 'charset'=>'utf8'); 
  */
 
-/* $dbconfig['dev'] = array('localhost', 'database', 'root', '1234', 'mysql', true);
+/* $dbconfig['dev'] = array('', '', '', '', 'mysql', true);
  * $dbconfig['prod'] = array('localhost', 'database', 'root', '1234', 'mysql', true);
  */
+ $dbconfig['dev'] = array($config['SITE_PATH'].'protected\cache\instadiff.sqlite', '', '', '', 'sqlite', true);
+ $dbconfig['prod'] = array($config['SITE_PATH'].'protected\cache\instadiff.sqlite', '', '', '', 'sqlite', true);
 ?>
