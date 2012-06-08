@@ -25,9 +25,9 @@ if($_SERVER['SERVER_NAME']=='localhost'){
   $config['BASE_PATH'] = realpath('..').'/instadiff/dooframework/';
 }else{
     $config['APP_MODE'] = 'prod';
-  $config['SITE_PATH'] = realpath('..').'/';
+  $config['SITE_PATH'] = '/app/www/';
   //$config['PROTECTED_FOLDER'] = 'protected/';
-  $config['BASE_PATH'] = realpath('..').'/dooframework/';
+  $config['BASE_PATH'] = '/app/www/dooframework/';
 }
 
 //----------------- optional, if not defined, default settings are optimized for production mode ----------------
