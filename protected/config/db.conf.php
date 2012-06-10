@@ -35,6 +35,6 @@ $dbmap['Ingredient']['has_many']['Food'] = array('foreign_key'=>'ingredient_id',
 /* $dbconfig['dev'] = array('', '', '', '', 'mysql', true);
  * $dbconfig['prod'] = array('localhost', 'database', 'root', '1234', 'mysql', true);
  */
- $dbconfig['dev'] = array($config['SITE_PATH'].'protected\cache\instadiff.sqlite', '', '', '', 'sqlite');
- $dbconfig['prod'] = array($config['SITE_PATH'].'protected\cache\instadiff.sqlite', '', '', '', 'sqlite', true);
+ $dbconfig['dev'] = array($config['SITE_PATH'].'protected/cache/instadiff.sqlite', '', '', '', 'sqlite', true);
+ $dbconfig['prod'] = array($config['SITE_PATH'].'protected/cache/instadiff.sqlite', '', '', '', 'sqlite', true);
 ?>

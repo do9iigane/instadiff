@@ -14,10 +14,7 @@ date_default_timezone_set('Asia/Tokyo');
 
 
 //for production mode use 'prod'
-
-
-
-if($_SERVER['SERVER_NAME']=='localhost'){
+if($_SERVER['SERVER_NAME']=='localhost'||$_SERVER['SERVER_NAME']=='instadiff.do9vm.com'){
     $config['APP_MODE'] = 'dev'; 
   //For framework use. Must be defined. Use full absolute paths and end them with '/'      eg. /var/www/project/
   $config['SITE_PATH'] = realpath('..').'/instadiff/';
@@ -39,7 +36,8 @@ if(strpos($config['SUBFOLDER'], '/')!==0){
 }
 
 $config['APP_URL'] = 'http://'.$_SERVER['HTTP_HOST'].$config['SUBFOLDER'];
-//$config['AUTOROUTE'] = TRUE;
+$config['AUTOROUTE'] = TRUE;
+
 $config['DEBUG_ENABLED'] = TRUE;
 
 //$config['TEMPLATE_COMPILE_ALWAYS'] = TRUE;

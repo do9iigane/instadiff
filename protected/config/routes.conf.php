@@ -54,7 +54,9 @@
  *
  */
  
-$route['*']['/'] = array('MainController', 'index');
+//$route['*']['/'] = array('MainController', 'index');
+$route['*']['/'] = array('IndexController', 'index');
+
 $route['*']['/error'] = array('ErrorController', 'index');
 
 
