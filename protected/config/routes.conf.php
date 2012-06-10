@@ -56,6 +56,7 @@
  
 //$route['*']['/'] = array('MainController', 'index');
 $route['*']['/'] = array('IndexController', 'index');
+$route['*']['/callback'] = array('CallbackController', 'index');
 
 $route['*']['/error'] = array('ErrorController', 'index');
 
