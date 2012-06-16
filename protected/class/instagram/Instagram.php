@@ -182,11 +182,7 @@ class Instagram {
     /**
      * Gets the code param received during the authorization step
      */
-    protected function getAccessCode() {
-    	
-		var_dump($_SESSION);
-		exit;
-		
+    protected function getAccessCode() {		
         return $_GET[self::RESPONSE_CODE_PARAM];
     }
 

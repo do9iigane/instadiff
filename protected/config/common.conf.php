@@ -27,7 +27,7 @@ if($_SERVER['SERVER_NAME']=='localhost'||$_SERVER['SERVER_NAME']=='instadiff.do9
   $config['BASE_PATH'] = '/app/www/dooframework/';
 }
 
-define('LIBPATH', $config['SITE_PATH'].'protected/class/');
+define('THIRDPATH', $config['SITE_PATH'].'protected/class/');
 
 
 //----------------- optional, if not defined, default settings are optimized for production mode ----------------

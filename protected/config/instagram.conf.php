@@ -12,7 +12,7 @@
         'client_secret' => 'f4793d01654c40759444568e9733d4cc',
         'grant_type' => 'authorization_code',
         //'redirect_uri' => 'http://localhost/heroku/instadiff/callback',
-        'redirect_uri' => 'http://instadiff.do9vm.com/callback',
+        'redirect_uri' => 'http://instadiff.do9vm.com/callback?type=mobile',
      );
  }else{
      //本番

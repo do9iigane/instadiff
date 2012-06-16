@@ -4,9 +4,11 @@ class IndexController extends DooController {
 
 	function index() {
 		//instaclassを読み込み
-		require_once LIBPATH . 'instadiff/Instagram.php';
+		require_once THIRDPATH . 'instagramClass.php';
 		//instaconfigを読み込み
-		require_once LIBPATH . 'instadiff/config.inc.php';
+		$dooconf = Doo::conf();
+		require_once $dooconf->SITE_PATH.$dooconf->PROTECTED_FOLDER."config/instagram.conf.php";
+		
 		//セッションを開始
 		session_start();
 
