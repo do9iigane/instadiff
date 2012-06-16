@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 // require_once 'Zend/Http/Client.php';
-require_once 'CurlHttpClient.php';
+require_once LIBPATH.'instadiff/CurlHttpClient.php';
 
 class Instagram {
 
@@ -183,6 +183,10 @@ class Instagram {
      * Gets the code param received during the authorization step
      */
     protected function getAccessCode() {
+    	
+		var_dump($_SESSION);
+		exit;
+		
         return $_GET[self::RESPONSE_CODE_PARAM];
     }
 
