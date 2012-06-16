@@ -27,6 +27,9 @@ if($_SERVER['SERVER_NAME']=='localhost'||$_SERVER['SERVER_NAME']=='instadiff.do9
   $config['BASE_PATH'] = '/app/www/dooframework/';
 }
 
+define('LIBPATH', $config['SITE_PATH'].'protected/library/');
+
+
 //----------------- optional, if not defined, default settings are optimized for production mode ----------------
 //if your root directory is /var/www/ and you place this in a subfolder eg. 'app', define SUBFOLDER = '/app/'
 
