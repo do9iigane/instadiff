@@ -5,13 +5,14 @@
  * instagram provide you at http://instagr.am/developer/
  */
  
- if($_SERVER['SERVER_NAME']=="localhost"){
+ if($_SERVER['SERVER_NAME']=="localhost"||$_SERVER['SERVER_NAME']=='instadiff.do9vm.com'){
      //開発
      $config = array(
         'client_id' => 'd0eeb40f62674e6cb6605fb3a4f9c564',
         'client_secret' => 'f4793d01654c40759444568e9733d4cc',
         'grant_type' => 'authorization_code',
-        'redirect_uri' => 'http://localhost/heroku/instadiff/callback',
+        //'redirect_uri' => 'http://localhost/heroku/instadiff/callback',
+        'redirect_uri' => 'http://instadiff.do9vm.com/callback',
      );
  }else{
      //本番

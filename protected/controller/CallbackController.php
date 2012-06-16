@@ -4,10 +4,10 @@ class CallbackController extends DooController {
 
     function index() {
         session_start();
-        //instaclassを読み込み
-        require_once '\instadiff\Instagram.php';
-        //instaconfigを読み込み
-        require_once '\instadiff\config.inc.php';
+		//instaclassを読み込み
+		require_once LIBPATH . 'instadiff/Instagram.php';
+		//instaconfigを読み込み
+		require_once LIBPATH . 'instadiff/config.inc.php';
         
         // Instantiate the API handler object
         $instagram = new Instagram($config);
@@ -15,10 +15,7 @@ class CallbackController extends DooController {
         
 
         $accessToken = $instagram -> getAccessToken();
-        
-        
-        var_dump($accessToken);
-        /*
+       
         $_SESSION['InstagramAccessToken'] = $accessToken;
 
         $instagram -> setAccessToken($_SESSION['InstagramAccessToken']);
@@ -26,7 +23,6 @@ class CallbackController extends DooController {
 
         // After getting the response, let's iterate the payload
         $response = json_decode($popular, true);
-        */
 
     }
 
