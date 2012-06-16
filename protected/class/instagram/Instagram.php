@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 // require_once 'Zend/Http/Client.php';
-require_once LIBPATH.'instadiff/CurlHttpClient.php';
+require_once 'CurlHttpClient.php';
 
 class Instagram {
 
