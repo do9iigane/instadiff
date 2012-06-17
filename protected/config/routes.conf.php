@@ -57,7 +57,7 @@
 //$route['*']['/'] = array('MainController', 'index');
 $route['*']['/'] = array('IndexController', 'index');
 $route['*']['/callback'] = array('CallbackController', 'index');
-$route['*']['/user/:mode'] = array('UserController', 'index');
+$route['*']['/user'] = array('UserController', 'index');
 
 $route['*']['/error/:code'] = array('ErrorController', 'index');
 
