@@ -11,13 +11,13 @@ class ErrorController extends DooController {
 	}
 
 	public function index() {
+		$data = array();
+
 		switch ($this->params['code']) {
 			case 'user_denied' :
-				$data = array();
-				
 				$data['title'] = 'Hi This is Title!';
 				$data['content'] = 'Some content here...';
-				$data['code'] = $this->params['code'];
+				$data['code'] = $this -> params['code'];
 				break;
 
 			default :

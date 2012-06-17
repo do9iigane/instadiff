@@ -4,10 +4,12 @@ class CallbackController extends DooController {
 	//public $autorender = true;
 
 	function __construct() {
+		//ユーザが認証を拒否した際の処理
 		if (isset($_GET['error_reason']) && $_GET['error_reason']=='user_denied'){
 			header('Location: error/'.$_GET['error_reason']);
+			die();
 		}
-		die();
+
 	}
 
 	function index() {
@@ -18,12 +20,15 @@ class CallbackController extends DooController {
 		//instaconfigを読み込み
 		$dooconf = Doo::conf();
 		require_once $dooconf -> SITE_PATH . $dooconf -> PROTECTED_FOLDER . "config/instagram.conf.php";
-
 		// Instantiate the API handler object
 		$instagram = new InstagramClass($config);
 
 		$accessToken = $instagram -> getAccessToken();
+		if (!empty($accessToken)) {
+			header('Location: user/');
+		}
 		$_SESSION['InstagramAccessToken'] = $accessToken;
+				
 		$instagram -> setAccessToken($_SESSION['InstagramAccessToken']);
 		$popular = $instagram -> getPopularMedia();
 
