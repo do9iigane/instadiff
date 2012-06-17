@@ -58,8 +58,7 @@
 $route['*']['/'] = array('IndexController', 'index');
 $route['*']['/callback'] = array('CallbackController', 'index');
 
-$route['*']['/error'] = array('ErrorController', 'index');
-
+$route['*']['/error/:code'] = array('ErrorController', 'index');
 
 //---------- Delete if not needed ------------
 $admin = array('admin'=>'1234');

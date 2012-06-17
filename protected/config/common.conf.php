@@ -43,7 +43,7 @@ $config['AUTOROUTE'] = TRUE;
 
 $config['DEBUG_ENABLED'] = TRUE;
 
-//$config['TEMPLATE_COMPILE_ALWAYS'] = TRUE;
+$config['TEMPLATE_COMPILE_ALWAYS'] = TRUE;
 
 //register functions to be used with your template files
 //$config['TEMPLATE_GLOBAL_TAGS'] = array('url', 'url2', 'time', 'isset', 'empty');
