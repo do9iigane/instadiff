@@ -1,4 +1,4 @@
-<?
+<?php
 
 /**
  * Configuration params, make sure to write exactly the ones
