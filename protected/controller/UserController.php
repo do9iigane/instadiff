@@ -14,6 +14,8 @@ class UserController extends DooController {
 
 	function index() {
 		session_start();
+		var_dump($data);
+exit;
 		$this -> render('userindex', $data);
 	}
 

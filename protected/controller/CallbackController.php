@@ -24,18 +24,19 @@ class CallbackController extends DooController {
 		$instagram = new InstagramClass($config);
 
 		$accessToken = $instagram -> getAccessToken();
-		if (!empty($accessToken)) {
-			header('Location: user/');
-		}
+		//if (!empty($accessToken)) {
+		//	header('Location: user/');
+		//}
+
 		$_SESSION['InstagramAccessToken'] = $accessToken;
 				
 		$instagram -> setAccessToken($_SESSION['InstagramAccessToken']);
 		$popular = $instagram -> getPopularMedia();
-
+		
 		// After getting the response, let's iterate the payload
 		$data['response'] = json_decode($popular, true);
 
-		$this -> render('callbackindex', $data);
+		$this -> render('callback/index', $data);
 	}
 
 }
