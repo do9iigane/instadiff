@@ -9,7 +9,7 @@ class CallbackController extends DooController {
 			header('Location: error/'.$_GET['error_reason']);
 			die();
 		}
-		instaconfigを読み込み
+		//instaconfigを読み込み
 		$this->conf = Doo::conf();
 		$this->session = Doo::session($this->conf->SERVER_NAME);
 
