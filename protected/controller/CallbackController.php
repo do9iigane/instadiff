@@ -13,7 +13,6 @@ class CallbackController extends DooController {
 		$this->conf = Doo::conf();
 		$this->session = Doo::session($this->conf->SERVER_NAME);
 
-
 	}
 
 	function index() {
