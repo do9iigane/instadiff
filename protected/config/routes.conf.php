@@ -54,7 +54,7 @@
  *
  */
  
-//$route['*']['/'] = array('MainController', 'index');
+$route['*']['/admin'] = array('MainController', 'index');
 $route['*']['/'] = array('IndexController', 'index');
 $route['*']['/callback'] = array('CallbackController', 'index');
 $route['*']['/user'] = array('UserController', 'index');
