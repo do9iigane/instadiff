@@ -81,6 +81,3 @@ $route['*']['/gen_site'] = array('MainController', 'gen_site', 'authName'=>'DooP
 
 //generate Models automatically
 $route['*']['/gen_model'] = array('MainController', 'gen_model', 'authName'=>'DooPHP Admin', 'auth'=>$admin, 'authFail'=>'Unauthorized!');
-
-
-?>

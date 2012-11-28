@@ -31,7 +31,6 @@ class CallbackController extends DooController {
 		}
 		header('Location: user');
 		die();
-
 // 		$instagram -> setAccessToken($accessToken);
 // 		$popular = $instagram -> getPopularMedia();
 

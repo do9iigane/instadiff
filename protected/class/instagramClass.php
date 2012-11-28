@@ -43,7 +43,6 @@ class instagramClass extends Instagram {
             if ($this->_oauthToken == null) {
                 $this->_setOauthToken();
             }
-
             $this->_accessToken = json_decode($this->_oauthToken)->access_token;
         }
 
