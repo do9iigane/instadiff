@@ -31,6 +31,7 @@ if(	$_SERVER['SERVER_NAME']=='localhost'||
   $config['SITE_PATH'] = '/app/www/';
   //$config['PROTECTED_FOLDER'] = 'protected/';
   $config['BASE_PATH'] = '/app/www/dooframework/';
+  $config['SERVER_NAME'] = $config['APP_MODE'];
 }
 
 define('THIRDPATH', $config['SITE_PATH'].'protected/class/');
