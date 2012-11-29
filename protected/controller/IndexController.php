@@ -16,7 +16,11 @@ class IndexController extends DooController {
         require_once $this->conf->SITE_PATH . $this->conf->PROTECTED_FOLDER . "config/instagram.conf.php";
         
         //認証が通っていれば、callbackに渡す
-        if (isset($this->session->InstagramAccessToken) && !empty($this->session->InstagramAccessToken)) {
+        if (
+            isset($this->session->InstagramAccessToken) &&
+            !empty($this->session->InstagramAccessToken)
+            )
+        {
             header('Location: callback');
             die();
         }
