@@ -23,13 +23,14 @@ class IndexController extends DooController {
         {
             header('Location: callback');
             die();
+        }else{
+            $this -> render('index');
+            //$instagram = new Instagram($config);
+            
+            //instaに認証を渡す
+            //$instagram->openAuthorizationUrl();
         }
         
-        $instagram = new Instagram($config);
-
-        //instaに認証を渡す
-        $instagram->openAuthorizationUrl();
-
     }
 
 }
